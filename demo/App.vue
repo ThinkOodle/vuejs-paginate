@@ -1,7 +1,7 @@
 <template>
   <div style="padding-left: 20px;">
     <h2>vuejs-paginate</h2>
-    <hr>
+    <hr />
     <div>
       <h3>Pagination component with 'li' tag surrounded</h3>
       <!-- The 'pagination' style using in containerClass comes from bootstrap -->
@@ -20,7 +20,10 @@
         :break-view-class="'break-view'"
         :break-view-link-class="'break-view-link'"
         :first-last-button="true"
-      ></paginate>
+      >
+        <span slot="prevText">yow</span>
+        <span slot="nextText">yoooowwww</span>
+      </paginate>
     </div>
 
     <div>
@@ -58,7 +61,6 @@
       ></paginate>
     </div>
 
-
     <div>
       <h3>Pagination component with SVG for view break</h3>
       <paginate
@@ -92,9 +94,9 @@ export default {
   data() {
     return {
       page: 1
-    }
-  },
-}
+    };
+  }
+};
 </script>
 
 <style lang="css">
